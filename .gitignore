@@ -34,5 +34,16 @@ build/
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
+### System ###
 .DS_Store
+
+### Java ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+### Editor backups ###
+*~
+*.swp
