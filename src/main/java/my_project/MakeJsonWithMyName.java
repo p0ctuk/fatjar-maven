@@ -2,12 +2,15 @@ package my_project;
 
 import com.google.gson.Gson;
 
-import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.logging.Logger;
 
 public class MakeJsonWithMyName {
-    public void printJson(LinkedHashMap<String, String> data) {
+    private static final Logger logger = Logger.getLogger(MakeJsonWithMyName.class.getName());
+
+    public void printJson(Map<String, String> data) {
         Gson gson = new Gson();
         String json = gson.toJson(data);
-        System.out.println(json);
+        logger.info(json);
     }
 }
